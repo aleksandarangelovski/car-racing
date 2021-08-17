@@ -1,0 +1,96 @@
+/* // My Screen Resolution : 1366 x 768 */
+
+#race {
+  text-align: center;
+  background-color: #242021;
+}
+
+h1,
+h2,
+h3 {
+  color: #a2a2a2;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.btnRace,
+.btnRestart {
+  background-color: #242021;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 150px;
+  height: 35px;
+}
+
+.raceTrack {
+  position: relative;
+  background: url(./img/raceTrack.jpg) center;
+  background-repeat: repeat-x;
+  background-size: 750px;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.darken-raceTrack {
+  background: linear-gradient(rgba(34, 32, 32, 0.582), rgba(15, 15, 15, 0.548)),
+    url(./img/raceTrack.jpg) center;
+  background-repeat: repeat-x;
+  background-size: 750px;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.raceTrack img {
+  height: 350px;
+  width: 300px;
+  display: block;
+}
+
+.finish {
+  background-image: url(./img/finish.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300px;
+  background-position-y: 150px;
+  z-index: 9999;
+}
+
+.hide-finish-flag {
+  background-image: none;
+}
+
+.countdown {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.countdown h1 {
+  font-size: 120px;
+  color: white;
+}
+
+.car1 {
+  padding-top: 100px;
+  color: #ffebf7;
+}
+
+.car2 {
+  color: #ba0000;
+  padding-bottom: 100px;
+}

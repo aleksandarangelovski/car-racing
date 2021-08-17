@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car racing game</title>
+    <meta name="keywords" content="html,css,lekcii" />
+    <meta name="description" content="ova e strana za ucenje" />
+    <meta name="author" content="Kristijan Bobevski" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Font-awesome 4.7 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body id="race">
+    <!-- My screen resolution : 1366 x 768 -->
+    <!-- write your code here -->
+    <div class="start">
+      <h1 class="mb-3">Car racing game</h1>
+      <button class="mr-2 btnRace">Race!</button>
+      <button class="btnRestart">Start over</button>
+    </div>
+
+    <div id="rt" class="raceTrack">
+      <div id="ff" class="finish hide-finish-flag">
+        <img class="car1" src="./img/car1.gif" alt="" />
+        <img class="car2" src="./img/car2.gif" alt="" />
+        <div id="cd" class="countdown"><h1></h1></div>
+      </div>
+    </div>
+
+    <div class="container-fluid results">
+      <div class="row">
+        <div class="col-6">
+          <h3 class="mb-3">Results</h3>
+          <div class="row">
+            <div class="col-6">
+              <h6 class="text-white font-weight-bold">Car 1</h6>
+              <div class="firstCarResult"></div>
+            </div>
+            <div class="col-6">
+              <h6 class="text-danger font-weight-bold">Car 2</h6>
+              <div class="secondCarResult"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 text-right mb-3">
+          <h3 class="mb-5 text-center">
+            Results from the previous time you played:
+          </h3>
+          <div class="prevGames"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <script src="app.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
